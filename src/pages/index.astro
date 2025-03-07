@@ -1,0 +1,131 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import tailwind from "../styles/tailwind.css";
+import Button from '../components/Button.astro';
+import Button2 from '../components/Button2.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>110 film</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+
+<MainLayout title="110 film">
+<main>
+
+<!-- Hero Unit Section -->
+<section class="w-full">
+  <div class="container mx-auto h-full flex items-center justify-center">
+    <img src="https://i.imgur.com/h8FQnDC.jpeg" alt="herounite">
+    <!-- <div class="text-center">
+      <h1 class="text-9xl font-bold">110 film </h1>
+      <p class="text-4xl mt-4">110-filmens historie</p>
+    </div> -->
+  </div>
+</section>
+
+  <!--add six articles -->
+  <section class="mt-10">
+    <article class="flex justify-center items-center min-h-screen px-4">
+      <div class="prose prose-lg max-w-md md:max-w-2xl">
+        <h3 class="text-5xl font-bold text-amber-300">1972</h3>
+      <h3 class="text-2xl">Kodak introducerer 110-film</h3>
+      <p class="mt-4">Da Kodak i 1972 lancerede 110-filmformatet, revolutionerede det fotografiens verden. Formatet blev skabt for at gøre filmfotografering mere tilgængelig for almindelige forbrugere. Med sin kompakte størrelse og en forseglet patron, der eliminerede behovet for manuel ilægning og tilbagespoling, blev 110-film hurtigt populært blandt amatørfotografer og rejseentusiaster.</p>
+    </div>
+    </article>
+    <article class="flex justify-center items-center min-h-screen px-4">
+      <div class="prose prose-lg max-w-md md:max-w-2xl">
+        <h3 class="text-5xl font-bold text-amber-300">1970’erne-1980’erne</h3>
+      <h3 class="text-2xl"> Storhedstiden</h3>
+      <p class="mt-4">I løbet af 1970’erne og 1980’erne var 110-film ekstremt populært. Kameraer, der brugte dette format, var ofte små og billige, hvilket gjorde dem attraktive for folk, der ønskede et enkelt og bekvemt kamera til hverdagsbrug. Mange kendte kameramærker, herunder Kodak, Canon og Minolta, producerede 110-kameraer, der tilbød alt fra basale point-and-shoot-modeller til mere avancerede enheder med zoomobjektiver og justerbare eksponeringsindstillinger.</p>
+    </div>
+    </article>
+    <!--add a section six pictures -->
+    <article class="flex justify-center">
+      <section class="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-md md:max-w-4xl">
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/VEacCrB.jpeg" alt="pic1">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/iXDGszx.jpeg" alt="pic2">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/8PHPus4.jpeg" alt="pic3">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/jeQqdOA.jpeg" alt="pic4">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/KdlKEZm.jpeg" alt="pic5">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/JlnvbfR.jpeg" alt="pic6">
+        </div>
+      </section> 
+    </article>           
+    <article class="flex justify-center items-center min-h-screen px-4">
+      <div class="prose prose-lg max-w-md md:max-w-2xl">
+        <h3 class="text-5xl font-bold text-amber-300">1990’erne</h3>
+      <h3 class="text-2xl">Kvalitetsudfordringer og dalende popularitet</h3>
+      <p class="mt-4">Selvom 110-film var praktisk, havde det sine ulemper. Det lille negativformat (13 × 17 mm) betød, at billedkvaliteten ikke var på højde med større filmformater som 35 mm. Kornethed og begrænset skarphed var ofte et problem, især ved større forstørrelser. Da digitalkameraer begyndte at vinde frem i 1990’erne, mistede 110-film gradvist sin plads på markedet.</p>
+    </div>
+    </article>
+  <article class="flex justify-center items-center min-h-screen px-4">
+    <div class="prose prose-lg max-w-md md:max-w-2xl"> 
+      <h3 class="text-5xl font-bold text-amber-300">2009</h3>
+    <h3 class="text-2xl">Produktionens ophør</h3>
+      <p class="mt-4">I 2009 stoppede Fujifilm som den sidste store producent med at fremstille 110-film. Formatet syntes at være en saga blot, og mange troede, at det aldrig ville vende tilbage.</p>
+    </div> 
+    </article>
+    <article class="flex justify-center items-center min-h-screen px-4">
+      <div class="prose prose-lg max-w-md md:max-w-2xl">
+        <h3 class="text-5xl font-bold text-amber-300">2012</h3>
+        <h3 class="text-2xl">Lomography genopliver 110-film</h3>
+        <p class="mt-4">I 2012 bragte Lomography nyt liv til formatet ved at genintroducere 110-film på markedet. Som en del af den voksende analoge fotografibølge begyndte entusiaster at genopdage charmen ved 110-film, især dens kompakte størrelse og unikke udseende. I dag er Lomography den eneste større producent af 110-film og tilbyder både farve- og sort/hvid-film til dem, der stadig elsker dette klassiske format.</p>
+      </div>
+    </article>
+    
+    <article class="flex justify-center">
+      <section class="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-md md:max-w-4xl">
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/5cRiG0u.jpeg" alt="pic7">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/YtQ5dxG.jpeg" alt="pic8">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/IYRfWoQ.jpeg" alt="pic9">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/fBJet9S.jpeg" alt="pic10">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/r5U48Fp.jpeg" alt="pic11">
+        </div>
+        <div class="overflow-hidden">
+          <img class="w-full h-auto object-cover" src="https://i.imgur.com/ZPZX4lq.jpeg" alt="pic12">
+        </div>
+      </section> 
+    </article>
+    
+    <article class="flex justify-center items-center min-h-screen px-4">
+      <div class="prose prose-lg max-w-md md:max-w-2xl">
+        <h3 class="text-5xl font-bold text-amber-300">I dag</h3>
+        <h3 class="text-2xl">En niche for analoge fotoentusiaster</h3>
+        <p class="mt-4">Fra sin debut i 1972 til sin genopstandelse i 2012 har 110-film været igennem både en storhedstid og en næsten total forsvinden. Selvom det ikke længere er mainstream, lever formatet videre blandt analoge fotoentusiaster og lomografer, der værdsætter dets unikke æstetik og brugervenlighed. Historien om 110-film er et bevis på, hvordan teknologi og nostalgi kan gå hånd i hånd i fotografiets verden.</p>
+      </div>
+    </article>
+    
+  </section>
+
+</main>
+</MainLayout>

@@ -1,0 +1,34 @@
+---
+import Link from '../components/Link.astro';
+
+---
+
+
+<div x-data="{ showmenu: false}" class="p-4  lg:static w-full">
+    <div id="navbar" class="flex flex-row justify-between">
+        <div id="logo" class="">
+            <a href="#">
+                <img src="https://i.imgur.com/E01BW5h.jpeg" alt="Logo">
+            </a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block">
+            <ul class="flex flex-row gap-8">
+                <li class=""><Link href="#" variant="secondary" size="large">Om 110</Link></li>
+                <li class=""><Link href="#" variant="secondary" size="large">Galleri</Link></li>
+                <li class=""><Link href="#" variant="secondary" size="large">Shop</Link></li>
+                <li><a href="#"><img src="https://i.imgur.com/pYpfAk3.jpeg" alt=""></a></li>
+            </ul>
+        </nav>
+        <button id="burgermenu" class="lg:hidden text-2xl relative inline-block text-black after:block after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full" x-on:click="showmenu = ! showmenu">Menu</button>
+    </div>
+    <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <ul>
+        <li class="text-center py-2 border-y-2"><Link href="#kapitler" variant="secondary" size="large">Bogens kapitler</Link></li>
+        <li class="text-center py-2 border-y-2"><Link href="#anmeldelser" variant="secondary" size="large">Anmeldelser af bogen</Link></li>
+        <li class="text-center py-2 border-y-2"><Link href="#billeder" variant="secondary" size="large">Billeder fra bogen</Link></li>
+        <li class="text-center py-2 border-y-2"><Link href="#forfatteren" variant="secondary" size="large">Forfatteren</Link></li>
+    </ul>
+</nav>
+</div>
+
