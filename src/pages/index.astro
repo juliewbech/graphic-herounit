@@ -13,119 +13,81 @@ import thumbsup from "../assets/images/thumbsup.png";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>110 film</title>
+    <title>Animeret herografik</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header></header>
 
-<MainLayout title="110 film">
-<main>
+<MainLayout title="Animeret hero grafik">
+<main class="">  
+  <section class="hero grid lg:grid-cols-8 gap-8 px-8 bg-[url(../../background.webp)] bg-cover"> 
+    <!--SECTION 1 -->
+    <div class="col-span-5"> 
+      <div class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"> 
+        <div class="col-start-1 col-span-12 row-start-1 row-span-12  ">
+        </div> 
+        <div class="col-start-1 col-span-3 row-start-1 row-span-3"> 
+          <img src="../../mund.webp" alt="Næve" width="410" height="412" loading="lazy" decoding="async" class="pt-8 animate__animated animate__slideInLeft animate__delay-2s"> 
+        </div> 
+        <div class="col-start-1 col-span-9 row-start-1 row-span-3"> 
+          <img src="../../BACKTOPOP.webp" alt="Tekst" width="711" height="348" loading="lazy" decoding="async"> 
+        </div> 
+        <div class="col-start-3 col-span-9 row-start-7 row-span-1"> 
+          <h2>HITS. LYS. LIR</h2>
+        </div> 
+        <div class="col-start-3 col-span-9 row-start-8 row-span-1"> 
+          <h2>VI SES 07.03.2025</h2>
+        </div> 
+        <div class="col-start-7 col-span-2 row-start-2 row-span-3"> 
+          <img src="../../Burst.webp" alt="Tekst" loading="lazy" decoding="async" class="animate__animated animate__heartBeat animate__infinite animate__slower"> 
+        </div> 
+        <div class="col-start-3 col-span-9 row-start-9 row-span-1"> 
+          <Button2>KØB BILLET</Button2>
+        </div> 
+      </div> <!-- <Image src={festival} alt="Festival" class="object-cover" /> --> </div> 
+      <!--SECTION 2 -->
+      <div class="col-span-3"> 
+        <div class="grid grid-cols-12 grid-rows-12 max-h-[90vh] overflow-hidden"> 
+          <div class="col-start-1 col-span-12 row-start-1 row-span-12  ">
+          </div> 
+          <div class="col-start-10 col-span-3 row-start-2 row-span-1"> 
+            <img src="../../Hearts.webp" alt="Tekst" width="711" height="348" loading="lazy" decoding="async" class="animate__animated animate__heartBeat animate__infinite animate__slower"> 
+          </div> 
+        </div> <!-- <Image src={festival} alt="Festival" class="object-cover" /> --> </div> 
+    </section>  
+    <section class="grid lg:grid-cols-3 gap-8 container mx-auto mt-16"> 
+      <div class="bg-gray-200 p-4"> 
+        <h2 class="text-2xl">The Ramones</h2> 
+        <p>Det originale punkband fra New York</p> 
+        <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> 
+        <div class="bg-gray-200 p-4"> 
+          <h2 class="text-2xl"> <a href="https://www.youtube.com/watch?v=2G5rfPISIwo" class="underline" target="_self">The Clash</a> </h2> 
+          <p>London kalder!</p> 
+          <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> 
+          <div class="bg-gray-200 p-4"> 
+            <h2 class="text-2xl"> <a href="https://www.youtube.com/watch?v=2G5rfPISIwo" class="underline" target="_self">Sex Pistols</a> </h2> 
+            <p>Gud redde dronningen</p> 
+            <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> 
+          </section> 
+            <section class="grid lg:grid-cols-3 gap-8 container mx-auto mt-16"> 
+              <div class="bg-gray-200 p-4"> 
+                <h2 class="text-2xl">The Ramones</h2> 
+                <p>Det originale punkband fra New York</p> 
+                <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> 
+                <div class="bg-gray-200 p-4">
+                  <h2 class="text-2xl"> 
+                    <a href="https://www.youtube.com/watch?v=2G5rfPISIwo" class="underline" target="_self">The Clash</a> 
+                  </h2> 
+                  <p>London kalder!</p> 
+                  <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> 
+                  <div class="bg-gray-200 p-4"> 
+                    <h2 class="text-2xl"> <a href="https://www.youtube.com/watch?v=2G5rfPISIwo" class="underline" target="_self">Sex Pistols</a> </h2> 
+                    <p>Gud redde dronningen</p> <img src="/_astro/thumbsup.HKo8mRk4_Z1Q5DS7.webp" alt="Thumbs up" width="32" height="32" loading="lazy" decoding="async" class="object-cover"> </div> </section> 
+                    <section id="videografik" class="fixed bottom-2 left-2 z-50 animate-slideinbottom"> 
+                      <video width="480" height="360" autoplay="" muted="" loop="" class="hover:animate-spin hover:hue-rotate-180"> 
+                        <source src="videografik-vp9-chrome.webm" type="video/webm"> <source src="videografik_1.mov" type="video/mov"> </video> 
+                      </section>  
+                      </main>
 
-<!-- Hero Unit Section -->
-<section class="w-full">
-  <div class="container mx-auto h-full flex items-center justify-center">
-    <img src="https://i.imgur.com/h8FQnDC.jpeg" alt="herounite">
-    <!-- <div class="text-center">
-      <h1 class="text-9xl font-bold">110 film </h1>
-      <p class="text-4xl mt-4">110-filmens historie</p>
-    </div> -->
-  </div>
-</section>
-
-  <!--add six articles -->
-  <section class="mt-10">
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold text-amber-300">1972</h3>
-      <h3 class="text-2xl">Kodak introducerer 110-film</h3>
-      <p class="mt-4">Da Kodak i 1972 lancerede 110-filmformatet, revolutionerede det fotografiens verden. Formatet blev skabt for at gøre filmfotografering mere tilgængelig for almindelige forbrugere. Med sin kompakte størrelse og en forseglet patron, der eliminerede behovet for manuel ilægning og tilbagespoling, blev 110-film hurtigt populært blandt amatørfotografer og rejseentusiaster.</p>
-    </div>
-    </article>
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold text-amber-300">1970’erne-1980’erne</h3>
-      <h3 class="text-2xl"> Storhedstiden</h3>
-      <p class="mt-4">I løbet af 1970’erne og 1980’erne var 110-film ekstremt populært. Kameraer, der brugte dette format, var ofte små og billige, hvilket gjorde dem attraktive for folk, der ønskede et enkelt og bekvemt kamera til hverdagsbrug. Mange kendte kameramærker, herunder Kodak, Canon og Minolta, producerede 110-kameraer, der tilbød alt fra basale point-and-shoot-modeller til mere avancerede enheder med zoomobjektiver og justerbare eksponeringsindstillinger.</p>
-    </div>
-    </article>
-    <!--add a section six pictures -->
-    <article class="flex justify-center">
-      <section class="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-md md:max-w-4xl">
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/VEacCrB.jpeg" alt="pic1">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/iXDGszx.jpeg" alt="pic2">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/8PHPus4.jpeg" alt="pic3">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/jeQqdOA.jpeg" alt="pic4">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/KdlKEZm.jpeg" alt="pic5">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/JlnvbfR.jpeg" alt="pic6">
-        </div>
-      </section> 
-    </article>           
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold text-amber-300">1990’erne</h3>
-      <h3 class="text-2xl">Kvalitetsudfordringer og dalende popularitet</h3>
-      <p class="mt-4">Selvom 110-film var praktisk, havde det sine ulemper. Det lille negativformat (13 × 17 mm) betød, at billedkvaliteten ikke var på højde med større filmformater som 35 mm. Kornethed og begrænset skarphed var ofte et problem, især ved større forstørrelser. Da digitalkameraer begyndte at vinde frem i 1990’erne, mistede 110-film gradvist sin plads på markedet.</p>
-    </div>
-    </article>
-  <article class="flex justify-center items-center min-h-screen px-4">
-    <div class="prose prose-lg max-w-md md:max-w-2xl"> 
-      <h3 class="text-5xl font-bold text-amber-300">2009</h3>
-    <h3 class="text-2xl">Produktionens ophør</h3>
-      <p class="mt-4">I 2009 stoppede Fujifilm som den sidste store producent med at fremstille 110-film. Formatet syntes at være en saga blot, og mange troede, at det aldrig ville vende tilbage.</p>
-    </div> 
-    </article>
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold text-amber-300">2012</h3>
-        <h3 class="text-2xl">Lomography genopliver 110-film</h3>
-        <p class="mt-4">I 2012 bragte Lomography nyt liv til formatet ved at genintroducere 110-film på markedet. Som en del af den voksende analoge fotografibølge begyndte entusiaster at genopdage charmen ved 110-film, især dens kompakte størrelse og unikke udseende. I dag er Lomography den eneste større producent af 110-film og tilbyder både farve- og sort/hvid-film til dem, der stadig elsker dette klassiske format.</p>
-      </div>
-    </article>
-    
-    <article class="flex justify-center">
-      <section class="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-md md:max-w-4xl">
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/5cRiG0u.jpeg" alt="pic7">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/YtQ5dxG.jpeg" alt="pic8">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/IYRfWoQ.jpeg" alt="pic9">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/fBJet9S.jpeg" alt="pic10">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/r5U48Fp.jpeg" alt="pic11">
-        </div>
-        <div class="overflow-hidden">
-          <img class="w-full h-auto object-cover" src="https://i.imgur.com/ZPZX4lq.jpeg" alt="pic12">
-        </div>
-      </section> 
-    </article>
-    
-    <article class="flex justify-center items-center min-h-screen px-4">
-      <div class="prose prose-lg max-w-md md:max-w-2xl">
-        <h3 class="text-5xl font-bold text-amber-300">I dag</h3>
-        <h3 class="text-2xl">En niche for analoge fotoentusiaster</h3>
-        <p class="mt-4">Fra sin debut i 1972 til sin genopstandelse i 2012 har 110-film været igennem både en storhedstid og en næsten total forsvinden. Selvom det ikke længere er mainstream, lever formatet videre blandt analoge fotoentusiaster og lomografer, der værdsætter dets unikke æstetik og brugervenlighed. Historien om 110-film er et bevis på, hvordan teknologi og nostalgi kan gå hånd i hånd i fotografiets verden.</p>
-      </div>
-    </article>
-    
-  </section>
-
-</main>
 </MainLayout>
